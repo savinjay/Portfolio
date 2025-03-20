@@ -87,19 +87,30 @@ const mobileMenu = {
 };
 
 // Form submission
-const contactForm = {
-  form: document.querySelector('.contact-form'),
-  
-  init() {
-    this.form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const formData = new FormData(this.form);
-      // Here you would typically send the form data to a server
-      alert('Message sent! (This is a demo)');
-      this.form.reset();
-    });
-  }
-};
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("m5PIHmPEfLaiQGHZK"); // Initialize EmailJS (Replace with your actual User ID)
+
+  document.querySelector(".contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Get input values
+    var templateParams = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    };
+
+    // Send email via EmailJS
+    emailjs.send("service_xepivqg", "template_e8owbpn", templateParams)
+      .then(function (response) {
+        alert("Email sent successfully!");
+        document.querySelector(".contact-form").reset(); // Reset form
+      })
+      .catch(function (error) {
+        alert("Error sending email: " + error);
+      });
+  });
+});
 
 // Glitch effect for text
 const glitchEffect = {
@@ -164,7 +175,6 @@ const glitchEffect = {
 document.addEventListener('DOMContentLoaded', () => {
   terminal.init();
   mobileMenu.init();
-  contactForm.init();
   glitchEffect.init();
 });
 
