@@ -15,7 +15,7 @@ const terminal = {
 1. Network Scanner (GitHub: github.com/johndoe/scanner)\n
 2. CI/CD Pipeline Automation\n
 3. Security Lab Environment\n`,
-    contact: 'Email: john@example.com\nGitHub: github.com/johndoe\nLinkedIn: linkedin.com/in/johndoe\n',
+    contact: 'Email: me.savinjay.h.n@gmail.com\nGitHub:https://github.com/savinjay\nLinkedIn:https://www.linkedin.com/in/savinjaya-h-n-82a38031a/\n',
     clear: 'CLEAR'
   },
 
