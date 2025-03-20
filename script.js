@@ -12,7 +12,7 @@ const terminal = {
 - DevOps: Docker, Kubernetes, CI/CD\n
 - Cloud: AWS, Azure, GCP`,
     projects: `Projects:\n
-1. Network Scanner (GitHub: github.com/johndoe/scanner)\n
+1. Network Scanner\n
 2. CI/CD Pipeline Automation\n
 3. Security Lab Environment\n`,
     contact: 'Email: me.savinjay.h.n@gmail.com\nGitHub:https://github.com/savinjay\nLinkedIn:https://www.linkedin.com/in/savinjaya-h-n-82a38031a/\n',
