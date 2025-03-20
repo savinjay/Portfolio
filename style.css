@@ -24,7 +24,7 @@ body {
   background-color: var(--background);
   color: var(--text);
   line-height: 1.6;
-  min-width: 1024px; /* Prevents shrinking on small screens */
+  /* min-width: 1024px; Prevents shrinking on small screens */
 }
 
 .container {
@@ -34,16 +34,17 @@ body {
 }
 
 /* Navigation */
+
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--cyber-border);
-  z-index: 1000;
+  z-index: 10000; /* Ensure it's above all content */
 }
+
 
 .nav-content {
   display: flex;
@@ -516,9 +517,16 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .terminal-container {
-    width: 100%;
-  }
+  
+    .terminal-container {
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      border-radius: 0;
+    }
+  
+  
   body {
     transform: scale(1.2); /* Scale up the page on small screens */
     transform-origin: top left;
