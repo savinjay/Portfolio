@@ -346,14 +346,15 @@ section {
 /* Terminal */
 .terminal-container {
   position: fixed;
-  top: 50vh;
-  right: 35vw;
-  width: 600px;
-  height: 400px;
   background: rgba(0, 0, 0, 0.95);
   border: 1px solid var(--cyber-border);
   border-radius: 4px 4px 0 0;
   z-index: 1000;
+  width: 90vw; /* Use 90% of screen width */
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center it */
 }
 
 .terminal-header {
@@ -500,40 +501,51 @@ section {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
 
-  .mobile-menu-btn {
-    display: block;
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-
-  
-    .terminal-container {
-      width: 100vw;
-      height: 100vh;
+  @media (max-width: 768px) {
+    /* Ensure the navbar is fixed and always at the top */
+    .navbar {
+      position: fixed;
       top: 0;
-      right: 0;
-      border-radius: 0;
+      width: 100%;
+      transition: transform 0.3s ease-in-out;
+      z-index: 10000; /* Ensure it's above everything */
     }
   
+    /* Initially hide the navbar when at the top */
+    .navbar.hidden {
+      transform: translateY(-100%); /* Moves navbar up when hidden */
+    }
   
-  body {
-    transform: scale(1.2); /* Scale up the page on small screens */
-    transform-origin: top left;
-    width: 1024px;
-    overflow-x: hidden;
+    .nav-links {
+      display: flex; /* Keep it visible */
+      flex-direction: column;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem 0;
+      transition: max-height 0.3s ease-in-out;
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+    .nav-links.show {
+      max-height: 300px; /* Allow menu to expand when active */
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+    }
+  
+    /* Fix full-page snapping and body width */
+    body {
+      min-width: 100vw; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
+    }
   }
-}
+  
 
 
 
