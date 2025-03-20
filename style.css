@@ -24,8 +24,7 @@ body {
   background-color: var(--background);
   color: var(--text);
   line-height: 1.6;
-  min-width: 1024px;
-  overflow-x: auto;
+  min-width: 1024px; /* Prevents shrinking on small screens */
 }
 
 .container {
@@ -500,7 +499,7 @@ section {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px)  {
+@media (max-width: 768px) {
   .nav-links {
     display: none;
   }
@@ -520,7 +519,6 @@ section {
   .terminal-container {
     width: 100%;
   }
-
   body {
     transform: scale(1.2); /* Scale up the page on small screens */
     transform-origin: top left;
@@ -528,7 +526,6 @@ section {
     overflow-x: hidden;
   }
 }
-
 
 
 
