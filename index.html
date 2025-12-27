@@ -4,164 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Savinjaya | Cloud Engineer</title>
-
   <link rel="stylesheet" href="style.css" />
-
-  <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
 <nav class="navbar">
-  <div class="container nav-content">
-    <div class="nav-logo">
-      <span>&gt; SAVIN.PORTFOLIO</span>
-    </div>
-
+  <div class="nav-inner">
+    <div class="logo">SAVIN<span>_OS</span></div>
     <div class="nav-links">
       <a href="#home">HOME</a>
       <a href="#about">ABOUT</a>
-      <a href="#projects">PROJECTS</a>
+      <a href="#projects">WORK</a>
       <a href="#contact">CONTACT</a>
-
-      <button id="terminal-btn" class="terminal-button">TERMINAL</button>
+      <button id="terminal-btn">TERMINAL</button>
     </div>
-
-    <button class="mobile-menu-btn">☰</button>
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
 <section id="home" class="hero">
   <canvas id="matrix-bg"></canvas>
-
-  <div class="hero-content">
-    <h1 class="glitch-text">SAVINJAYA H N</h1>
-    <p class="subtitle">
-      CLOUD ENGINEER @ IZMO LTD · BUG BOUNTY LEARNER
+  <div class="hero-panel">
+    <h1 class="glitch">SAVINJAYA H N</h1>
+    <p class="role">Cloud Engineer @ izmo Ltd</p>
+    <p class="tagline">
+      Operating Linux infrastructure · Learning offensive security ·
+      Building resilient systems
     </p>
+  </div>
+</section>
 
-    <div class="cyber-box">
-      <p>
-        Building and operating secure Linux-based cloud infrastructure.
-        Actively learning offensive security to strengthen defensive systems.
-      </p>
+<section id="about" class="section">
+  <h2 class="section-title">PROFILE</h2>
+  <div class="panel">
+    <p>
+      Cloud Engineer working on real production systems at izmo Ltd.
+      My daily work involves Linux servers, cloud infrastructure,
+      reverse proxies, and reliability.
+    </p>
+    <p>
+      Outside work, I study bug bounty and web security to understand
+      how systems fail in the real world — not just in theory.
+    </p>
+  </div>
+
+  <div class="grid">
+    <div class="panel mini">
+      <h3>Cloud</h3>
+      <ul>
+        <li>AWS (EC2, VPC, IAM)</li>
+        <li>Docker</li>
+        <li>Nginx & SSL</li>
+      </ul>
+    </div>
+
+    <div class="panel mini">
+      <h3>Security</h3>
+      <ul>
+        <li>Bug Bounty</li>
+        <li>OWASP Top 10</li>
+        <li>Web Testing</li>
+      </ul>
+    </div>
+
+    <div class="panel mini">
+      <h3>Systems</h3>
+      <ul>
+        <li>Linux Internals</li>
+        <li>Bash</li>
+        <li>Monitoring</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about">
-  <div class="container">
-    <h2 class="glitch-text">ABOUT ME</h2>
+<section id="projects" class="section">
+  <h2 class="section-title">WORK</h2>
 
-    <div class="cyber-box about-content">
-      <p>
-        I am a Cloud Engineer at izmo Ltd, working with production Linux systems,
-        cloud infrastructure, reverse proxies, and automation.
-      </p>
-      <p>
-        In parallel, I am learning bug bounty and web security to gain a deeper
-        understanding of how real-world systems fail and how to secure them
-        properly.
-      </p>
+  <div class="grid">
+    <div class="panel locked">
+      <span class="lock">CLASSIFIED</span>
+      <p>Cloud infrastructure experiments</p>
     </div>
 
-    <div class="skills-grid">
-      <div class="cyber-box skill-card">
-        <h3>Cloud & DevOps</h3>
-        <ul>
-          <li>AWS (EC2, IAM, VPC, S3)</li>
-          <li>Docker & Containers</li>
-          <li>Nginx & SSL</li>
-          <li>CI/CD Fundamentals</li>
-        </ul>
-      </div>
+    <div class="panel locked">
+      <span class="lock">REDACTED</span>
+      <p>Bug bounty labs & notes</p>
+    </div>
 
-      <div class="cyber-box skill-card">
-        <h3>Security</h3>
-        <ul>
-          <li>Bug Bounty Methodology</li>
-          <li>OWASP Top 10</li>
-          <li>Web & API Testing</li>
-          <li>Linux Hardening</li>
-        </ul>
-      </div>
-
-      <div class="cyber-box skill-card">
-        <h3>Systems</h3>
-        <ul>
-          <li>Linux Administration</li>
-          <li>Bash Automation</li>
-          <li>Networking Basics</li>
-          <li>Monitoring & Logs</li>
-        </ul>
-      </div>
+    <div class="panel locked">
+      <span class="lock">PENDING</span>
+      <p>Security automation tooling</p>
     </div>
   </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects">
-  <div class="container">
-    <h2 class="glitch-text">PROJECTS</h2>
-
-    <div class="projects-grid">
-      <div class="cyber-box project-card placeholder">
-        <h3>Coming Soon</h3>
-        <p>Cloud & infrastructure experiments.</p>
-      </div>
-
-      <div class="cyber-box project-card placeholder">
-        <h3>Coming Soon</h3>
-        <p>Bug bounty labs and write-ups.</p>
-      </div>
-
-      <div class="cyber-box project-card placeholder">
-        <h3>Coming Soon</h3>
-        <p>Security automation tools.</p>
-      </div>
-    </div>
+<section id="contact" class="section">
+  <h2 class="section-title">CONTACT</h2>
+  <div class="panel contact">
+    <a href="mailto:me.savinjay.h.n@gmail.com">me.savinjay.h.n@gmail.com</a>
+    <a href="https://github.com/savinjay" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/savinjaya-h-n-82a38031a" target="_blank">LinkedIn</a>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <div class="container">
-    <h2 class="glitch-text">CONTACT</h2>
-
-    <div class="contact-content">
-      <div class="cyber-box contact-info">
-        <a href="mailto:me.savinjay.h.n@gmail.com">me.savinjay.h.n@gmail.com</a>
-        <a href="https://github.com/savinjay" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/savinjaya-h-n-82a38031a/" target="_blank">LinkedIn</a>
-      </div>
-
-      <form class="cyber-box contact-form">
-        <input type="text" id="name" placeholder="Name" required />
-        <input type="email" id="email" placeholder="Email" required />
-        <textarea id="message" placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TERMINAL ================= -->
-<div id="terminal" class="terminal-container hidden">
+<div id="terminal" class="terminal hidden">
   <div class="terminal-header">
     <span>CyberOS</span>
-    <button id="close-terminal">X</button>
+    <button id="close-terminal">×</button>
   </div>
-
-  <div class="terminal-content">
-    <div class="terminal-output"></div>
-    <div class="terminal-input-line">
-      <span>$</span>
-      <input type="text" class="terminal-input" />
-    </div>
+  <div class="terminal-body">
+    <div class="output"></div>
+    <input type="text" placeholder="type help..." />
   </div>
 </div>
 
